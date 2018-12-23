@@ -33,10 +33,14 @@ Initial Vue setup
 
 Vue project created using vue cli v3.2.1
 ```
-vue create -n philngo.me
+cd ..
+vue create -n philngo.me  # use defaults
+cd philngo.me
+vue add router
+vue add vuex
 ```
 
-Development
+Development cheatsheet
 ---
 
 ```
