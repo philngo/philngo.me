@@ -26,3 +26,27 @@ https://github.com/philngo/philngo.me/pull/new/<your-branch>
 ).
 2. Zeit will make a new deployment from that branch.
 3. Merge and the new master will be deployed to philngo.me.
+
+
+Initial Vue setup
+---
+
+Vue project created using vue cli v3.2.1
+```
+vue create -n philngo.me
+```
+
+Development
+---
+
+```
+yarn install
+yarn run serve
+yarn run build
+yarn run test
+yarn run lint
+```
+
+Customize configuration
+---
+See [Configuration Reference](https://cli.vuejs.org/config/).
