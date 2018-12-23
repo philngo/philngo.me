@@ -3,6 +3,6 @@
   "builds": [
     { "src": "index.html", "use": "@now/static" }
   ],
-  "alias": ["philngo.me"],
+  "alias": ["philngo.me", "www.philngo.me"],
   "name": "philngo-me"
 }
