@@ -1,8 +1,11 @@
 {
   "version": 2,
+  "name": "philngo-me",
+  "alias": ["philngo.me", "www.philngo.me"],
   "builds": [
     { "src": "package.json", "use": "@now/static-build" }
   ],
-  "alias": ["philngo.me", "www.philngo.me"],
-  "name": "philngo-me"
+  "routes": [
+    { "src": "/.*", "dest": "package.json" }
+  ]
 }
