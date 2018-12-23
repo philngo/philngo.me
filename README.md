@@ -12,10 +12,11 @@ https://zeit.co/docs/v2/domains-and-aliases/adding-a-domain/#4.-using-a-custom-d
 ).
 
 1. Add a ALIAS record for `philngo.me` pointing to `alias.zeit.co`.
+1. Add a CNAME record for `www.philngo.me` pointing to `alias.zeit.co`.
 2. Run `now alias https://philngome-g68g4s0f8.now.sh/ philngo.me`. This fails but has token we can use for verification.
 3. Add the `_now` TXT record that was in the output (has verification token).
 4. Run `now alias https://philngome-g68g4s0f8.now.sh/ philngo.me` again. (This succeeds and gives us a cert too).
-5. Add `"alias": ["philngo.me"]`, which means this alias is applied on master branch deploys.
+5. Add `"alias": ["philngo.me", "www.philngo.me"]`, which means this alias is applied on master branch deploys.
 
 Contributing
 ---
