@@ -10,6 +10,7 @@ const data = require('./data.json').map(d => {
       d.content = text
     })
   })
+  return d
 })
 
 module.exports = (req, res) => {
