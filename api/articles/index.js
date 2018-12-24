@@ -7,6 +7,7 @@ const fetch = require('node-fetch')
 const data = require('./data.json').map(d => {
   fetch(d.source).then(response => {
     response.text().then(text => {
+      console.log('TEXT ' + text)
       d.content = text
     })
   })
