@@ -1,9 +1,15 @@
-*
-!package.json
-!yarn.lock
-!now.json
-!src/**
-!api/**
-!public/**
-!babel.config.js
-!vue.config.js
+.DS_Store
+node_modules
+dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+*.log*
+
+# dotfiles
+.*
+!.gitignore
+!.nowignore
