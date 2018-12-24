@@ -3,10 +3,11 @@
   "name": "philngo-me",
   "alias": ["philngo.me", "www.philngo.me"],
   "builds": [
-    { "src": "package.json", "use": "@now/static-build" },
-    { "src": "index.js", "use": "@now/node" }
+    { "src": "package.json", "use": "@now/static-build" }
   ],
   "routes": [
-    { "src": "/.*", "dest": "index.js" }
+    { "src": "/writing", "status": 302, "headers": {"Location": "/"} },
+    { "src": "/professional", "status": 302, "headers": {"Location": "/"} },
+    { "src": "/personal", "status": 302, "headers": {"Location": "/"} }
   ]
 }
