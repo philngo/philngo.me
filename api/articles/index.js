@@ -1,4 +1,6 @@
-var data = require('./data.json')
+const data = require('./data.json').map(d => {
+  return d.content = require(d.source)
+})
 
 module.exports = (req, res) => {
   res.writeHead(200, { 'Content-Type': 'application/json' })
