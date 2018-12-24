@@ -45,6 +45,12 @@ now and the vue build.
   ...
   { "src": "package.json", "use": "@now/static-build" }
 ]
+
+# for html5 history
+"routes": [
+  ...
+  { "src": "/((?!\\.js|\\.css|\\.html|\\.ico|\\.map).)*$", "dest": "index.html" }
+]
 ```
 
 Contributing
