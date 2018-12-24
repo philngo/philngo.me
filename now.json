@@ -3,7 +3,8 @@
   "name": "philngo-me",
   "alias": ["philngo.me", "www.philngo.me"],
   "builds": [
-    { "src": "package.json", "use": "@now/static-build" }
+    { "src": "package.json", "use": "@now/static-build" },
+    { "src": "api/hello/index.js", "use": "@now/node" }
   ],
   "routes": [
     { "src": "/((?!\\.js|\\.css|\\.html|\\.ico|\\.map).)*$", "dest": "index.html" }
