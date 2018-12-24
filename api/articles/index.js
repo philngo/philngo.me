@@ -1,5 +1,7 @@
+const fs = require('fs')
+
 const data = require('./data.json').map(d => {
-  return d.content = require(d.source)
+  return d.content = fs.readFile(d.source, 'utf8')
 })
 
 module.exports = (req, res) => {
