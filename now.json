@@ -6,6 +6,6 @@
     { "src": "package.json", "use": "@now/static-build" }
   ],
   "routes": [
-    { "src": "/^((?!\\.js|\\.css|\\.html).)*$", "dest": "index.html" }
+    { "src": "/((?!\\.js|\\.css|\\.html|\\.ico).)*$", "dest": "index.html" }
   ]
 }
