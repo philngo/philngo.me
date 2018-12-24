@@ -1,7 +1,15 @@
+/*
+This is really just for rapid prototyping.
+Eventualy swap this with a DB connection and better API.
+*/
 const fs = require('fs')
 
 const data = require('./data.json').map(d => {
-  return d.content = fs.readFile(d.source, 'utf8')
+  fetch(d.source).then(response => {
+    response.text().then(text => {
+      d.content = text
+    })
+  })
 })
 
 module.exports = (req, res) => {

@@ -8,6 +8,6 @@
     { "src": "api/articles/*.md", "use": "@now/static" }
   ],
   "routes": [
-    { "src": "/((?!\\.js|\\.css|\\.html|\\.ico|\\.map|api).)*$", "dest": "index.html" }
+    { "src": "/((?!\\.js|\\.css|\\.html|\\.ico|\\.map|\\.md|api).)*$", "dest": "index.html" }
   ]
 }
