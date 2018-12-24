@@ -6,6 +6,8 @@
     { "src": "package.json", "use": "@now/static-build" }
   ],
   "routes": [
-    { "src": "/.+", "dest": "/", "status": 302 }
+    { "src": "/writing", "dest": "/", "status": 302 },
+    { "src": "/personal", "dest": "/", "status": 302 },
+    { "src": "/professional", "dest": "/", "status": 302 }
   ]
 }
