@@ -2,17 +2,7 @@
 This is really just for rapid prototyping.
 Eventualy swap this with a DB connection and better API.
 */
-const fetch = require('node-fetch')
-
-const data = require('./data.json').map(d => {
-  fetch(d.source).then(response => {
-    response.text().then(text => {
-      console.log('TEXT ' + text)
-      d.content = text
-    })
-  })
-  return d
-})
+const data = require('./data.json')
 
 module.exports = (req, res) => {
   res.writeHead(200, { 'Content-Type': 'application/json' })
