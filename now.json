@@ -7,6 +7,6 @@
     { "src": "api/articles/index.js", "use": "@now/node" }
   ],
   "routes": [
-    { "src": "/((?!\\.js|\\.css|\\.html|\\.ico|\\.map).)*$", "dest": "index.html" }
+    { "src": "/((?!\\.js|\\.css|\\.html|\\.ico|\\.map|api).)*$", "dest": "index.html" }
   ]
 }
