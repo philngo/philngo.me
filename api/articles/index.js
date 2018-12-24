@@ -2,7 +2,7 @@
 This is really just for rapid prototyping.
 Eventualy swap this with a DB connection and better API.
 */
-const fs = require('fs')
+const fetch = require('fetch')
 
 const data = require('./data.json').map(d => {
   fetch(d.source).then(response => {
