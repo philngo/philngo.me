@@ -6,6 +6,6 @@
     { "src": "package.json", "use": "@now/static-build" }
   ],
   "routes": [
-    { "src": "/.*", "dest": "/", "status": 302 }
+    { "src": "/.*", "dest": "https://philngo.me", "status": 302 }
   ]
 }
