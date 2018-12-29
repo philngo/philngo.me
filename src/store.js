@@ -21,7 +21,10 @@ export default new Vuex.Store({
         id: payload.id,
         title: payload.title,
         slug: payload.slug,
-        published: moment(payload.published)
+        source: payload.source,
+        published: moment(payload.published),
+        updated: moment(payload.updated),
+        synopsis: payload.synopsis
       }
       Vue.set(state.articles, article.id, article)
     }
