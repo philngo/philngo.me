@@ -13,6 +13,15 @@ export default new Vuex.Store({
   getters: {
     articleList (state) {
       return Object.keys(state.articles).map(id => state.articles[id])
+    },
+    articleIdBySlug (state) {
+      return Object.keys(state.articles).reduce((obj, id) => {
+        const article = state.articles[id]
+        return {
+          ...obj,
+          [article.slug]: article.id
+        }
+      }, {})
     }
   },
   mutations: {

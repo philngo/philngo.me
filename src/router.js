@@ -30,7 +30,7 @@ export default new Router({
     },
     {
       path: '/:year/:month/:day/:slug',
-      name: 'articles',
+      name: 'article',
       component: () => import(/* webpackChunkName: "articles" */ './views/Article.vue')
     }
   ]

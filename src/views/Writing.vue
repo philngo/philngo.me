@@ -1,13 +1,16 @@
 <template>
   <div class="writing">
-    <h1>Writing</h1>
-    <template v-for="article in articleList">
-      <article-preview
-        :key="article.id"
-        :title="article.title"
-        :published="article.published"
-      />
-    </template>
+    <div class="articles">
+      <template v-for="article in articleList">
+        <article-preview
+          :key="article.id"
+          :title="article.title"
+          :slug="article.slug"
+          :published="article.published"
+          :synopsis="article.synopsis"
+        />
+      </template>
+    </div>
   </div>
 </template>
 
@@ -34,7 +37,10 @@ export default {
 .writing {
 }
 
-h1 {
-  font-weight: 300;
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
 }
 </style>
