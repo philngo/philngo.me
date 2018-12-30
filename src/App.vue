@@ -2,12 +2,12 @@
   <div id="app">
     <div id="aside">
       <h1 id="name">
-        <router-link to="/">Phil Ngo</router-link>
+        <router-link class="black" to="/">Phil Ngo</router-link>
       </h1>
       <ul id="menu">
-        <li><router-link to="/writing">writing</router-link></li>
-        <li><router-link to="/personal">personal</router-link></li>
-        <li><router-link to="/professional">professional</router-link></li>
+        <li><router-link class="black" to="/writing">writing</router-link></li>
+        <li><router-link class="black" to="/personal">personal</router-link></li>
+        <li><router-link class="black" to="/professional">professional</router-link></li>
       </ul>
     </div>
     <div id="content">
@@ -52,6 +52,12 @@ a {
 }
 a:hover {
   color: #aa0505;
+}
+a.red {  /* always red */
+  color: #aa0505;
+}
+a.black:hover {  /* always black */
+  color: black;
 }
 
 #menu {

@@ -7,7 +7,7 @@
     </div>
     <h2><router-link :to="articleLink">{{ title }}</router-link></h2>
     <p>{{ synopsis }}</p>
-    <router-link class="call-to-action" :to="articleLink">Read more</router-link>
+    <router-link class="red" :to="articleLink">Read more</router-link>
   </div>
 </template>
 
@@ -60,17 +60,8 @@ export default {
   font-weight: 100;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-
 p {
   margin: 10px 0;
-}
-
-.call-to-action {
-  color: #aa0505;
 }
 
 h2 {

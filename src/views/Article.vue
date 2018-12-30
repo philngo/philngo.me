@@ -5,9 +5,10 @@
       <i> by </i>
       <router-link :to="authorLink" class="author">PHIL NGO</router-link>
     </div>
-    <h1 class="title"><router-link :to="articleLink">{{ title }}</router-link></h1>
-    <div class="content" v-html="articleHtml">
-    </div>
+    <h1 class="title">
+      <router-link class="black" :to="articleLink">{{ title }}</router-link>
+    </h1>
+    <div class="content" v-html="articleHtml"></div>
   </div>
 </template>
 
@@ -105,7 +106,7 @@ export default {
 }
 
 h1.title {
-  margin: 20px 0 60px;
+  margin: 10px 0 60px;
   font-size: 52px;
   font-weight: 100;
 }
