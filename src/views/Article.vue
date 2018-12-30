@@ -76,14 +76,10 @@ export default {
       return callApiArticleMarkdown(this.article.source)
     }
   },
-  watch: {
-    source (newSource, oldSource) {
-      if (oldSource === undefined && newSource !== undefined) {
-        this.loadArticleMarkdown().then(markdown => {
-          this.markdown = markdown
-        })
-      }
-    }
+  mounted () {
+    this.loadArticleMarkdown().then(markdown => {
+      this.markdown = markdown
+    })
   }
 }
 </script>
