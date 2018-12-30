@@ -73,13 +73,20 @@ export default {
   },
   methods: {
     loadArticleMarkdown () {
-      return callApiArticleMarkdown(this.article.source)
+      if (this.markdown === null && this.source !== undefined) {
+        callApiArticleMarkdown(this.source).then(markdown => {
+          this.markdown = markdown
+        })
+      }
     }
   },
   mounted () {
-    this.loadArticleMarkdown().then(markdown => {
-      this.markdown = markdown
-    })
+    this.loadArticleMarkdown()
+  },
+  watch: {
+    source () {
+      this.loadArticleMarkdown()
+    }
   }
 }
 </script>
