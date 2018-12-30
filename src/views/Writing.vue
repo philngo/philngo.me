@@ -1,12 +1,35 @@
 <template>
   <div class="writing">
-    <h2>Writing</h2>
+    <div class="articles">
+      <template v-for="article in articleList">
+        <article-preview
+          :key="article.id"
+          :title="article.title"
+          :slug="article.slug"
+          :published="article.published"
+          :synopsis="article.synopsis"
+        />
+      </template>
+    </div>
   </div>
 </template>
 
 <script>
+import {
+  mapGetters
+} from 'vuex'
+
+import ArticlePreview from '@/components/ArticlePreview'
 export default {
-  name: 'writing'
+  name: 'writing',
+  components: {
+    ArticlePreview
+  },
+  computed: {
+    ...mapGetters([
+      'articleList'
+    ])
+  }
 }
 </script>
 
@@ -14,7 +37,10 @@ export default {
 .writing {
 }
 
-h2 {
-  font-weight: 300;
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
 }
 </style>

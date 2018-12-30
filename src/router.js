@@ -16,17 +16,22 @@ export default new Router({
     {
       path: '/writing',
       name: 'writing',
-      component: () => import(/* webpackChunkName: "writing" */ './views/Writing.vue')
+      component: () => import('./views/Writing.vue')
     },
     {
       path: '/personal',
       name: 'personal',
-      component: () => import(/* webpackChunkName: "personal" */ './views/Personal.vue')
+      component: () => import('./views/Personal.vue')
     },
     {
       path: '/professional',
       name: 'professional',
-      component: () => import(/* webpackChunkName: "professional" */ './views/Professional.vue')
+      component: () => import('./views/Professional.vue')
+    },
+    {
+      path: '/:year/:month/:day/:slug',
+      name: 'article',
+      component: () => import(/* webpackChunkName: "articles" */ './views/Article.vue')
     }
   ]
 })
