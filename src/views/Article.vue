@@ -110,6 +110,12 @@ h1.title {
   font-size: 52px;
   font-weight: 100;
 }
+@media screen and (max-width: 900px) {
+  h1.title {
+    margin: 10px 0;
+    font-size: 24px;
+  }
+}
 
 .content >>> h1, h2, h3 {
   margin: 0;

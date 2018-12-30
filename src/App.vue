@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="aside">
+    <div id="nav">
       <h1 id="name">
         <router-link class="black" to="/">Phil Ngo</router-link>
       </h1>
@@ -24,27 +24,72 @@ export default {
 </script>
 
 <style>
-/* App-wide styles are fine here */
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   display: grid;
   grid-template-columns: 230px 1fr;
   grid-template-rows: 100%;
-  grid-template-areas: "aside content";
+  grid-template-areas:
+    "nav content";
   height: 100vh;
 }
+@media screen and (max-width: 900px) {
+  #app {
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "nav"
+      "content";
+    height: auto;
+  }
+}
 
-#aside {
+#nav {
   padding: 48px 30px;
-  grid-area: aside;
+  grid-area: nav;
   background-color: #f5f8f9;
 }
+@media screen and (max-width: 900px) {
+  #nav {
+    padding: 40px 40px;
+  }
+}
+
+#content {
+  grid-area: content;
+  overflow-y: auto;
+  padding: 80px 150px;
+}
+@media screen and (max-width: 900px) {
+  #content {
+    padding: 40px;
+  }
+}
+
 
 #name {
   margin-top: 0;
   font-size: 2.7rem;
   font-weight: 300;
 }
+@media screen and (max-width: 900px) {
+  #name {
+    font-size: 2.0rem;
+  }
+}
+
+#menu {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+@media screen and (max-width: 900px) {
+  #menu {
+    margin: 0;
+  }
+}
+
+/* App-wide styles go here */
 
 a {
   color: black;
@@ -58,18 +103,6 @@ a.red {  /* always red */
 }
 a.black:hover {  /* always black */
   color: black;
-}
-
-#menu {
-  list-style: none;
-  padding-left: 0;
-  margin: 20px 0;
-}
-
-#content {
-  grid-area: content;
-  overflow-y: auto;
-  padding: 80px 150px;
 }
 
 </style>
