@@ -93,6 +93,7 @@ export default {
 
 <style scoped>
 .article {
+  padding-bottom: 70px;
 }
 
 .article-info {
