@@ -1,6 +1,10 @@
 <template>
   <div class="personal">
     <h2>Personal</h2>
+    <p>
+      <i>This section is still under construction.</i>
+      (Not a joke about my personal life.)
+    </p>
   </div>
 </template>
 

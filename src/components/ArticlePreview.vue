@@ -64,9 +64,6 @@ a {
   color: black;
   text-decoration: none;
 }
-a:hover {
-  color: #aa0505;
-}
 
 p {
   margin: 10px 0;

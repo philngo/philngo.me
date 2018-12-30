@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div id="aside">
-      <h1>
+      <h1 id="name">
         <router-link to="/">Phil Ngo</router-link>
       </h1>
-      <ul>
+      <ul id="menu">
         <li><router-link to="/writing">writing</router-link></li>
         <li><router-link to="/personal">personal</router-link></li>
         <li><router-link to="/professional">professional</router-link></li>
@@ -23,7 +23,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+/* App-wide styles are fine here */
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   display: grid;
@@ -39,7 +40,7 @@ export default {
   background-color: #f5f8f9;
 }
 
-h1 {
+#name {
   margin-top: 0;
   font-size: 2.7rem;
   font-weight: 300;
@@ -49,8 +50,11 @@ a {
   color: black;
   text-decoration: none;
 }
+a:hover {
+  color: #aa0505;
+}
 
-ul {
+#menu {
   list-style: none;
   padding-left: 0;
   margin: 20px 0;

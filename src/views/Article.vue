@@ -104,11 +104,6 @@ export default {
   font-weight: 100;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-
 h1.title {
   margin: 20px 0 60px;
   font-size: 52px;
