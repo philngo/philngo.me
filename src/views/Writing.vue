@@ -43,4 +43,9 @@ export default {
   grid-template-rows: auto;
   grid-gap: 20px;
 }
+@media screen and (max-width: 900px) {
+  .articles {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
