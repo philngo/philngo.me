@@ -70,3 +70,15 @@ Development commands
 yarn install  # initial setup
 yarn run serve  # local dev server
 ```
+
+Environment
+---
+
+There doesn't seem to be a good way to run a local dev version of the now-based
+API, so here's a workaround: set the following in `.env.local`, which is not
+version-controlled. This will point the locally running app at any deployed
+version of the API. With now, basically every commit on every PR branch gets
+deployed.
+
+    # .env.local
+    VUE_APP_API_SERVER=https://philngo.me
