@@ -14,13 +14,13 @@ Some design docs are more useful than others, but we've found that the most usef
 
 A design doc should include the following sections.
 
-1. Purpose - review the business case. Why does the proposal matter? It is often helpful to include additional context or background. A requirement to put implementations in terms of business requirements forces us to think practically and creatively through the trade-offs of the several proposed implementations. Because features take time to implement, review, and maintain, we save a lot of time and effort when we kill bad ideas quickly.
+1. **Purpose - review the business case**. Why does the proposal matter? It is often helpful to include additional context or background. A requirement to put implementations in terms of business requirements forces us to think practically and creatively through the trade-offs of the several proposed implementations. Because features take time to implement, review, and maintain, we save a lot of time and effort when we kill bad ideas quickly.
 
-2. Proposal(s) - outline the proposed solution(s). If providing multiple possible solutions, the author should try to pick one that they think will work and explain why they are recommending it.  More often than not, reviewers will disagree about what constitutes the most promising proposal. Sometimes an alternative or hybrid proposal will arise during discussion that works better. Sometimes none of the proposals gain consensus. It can be difficult to go back to the drawing board after a design is rejected, but it's always worth it. The opportunity for early feedback and discussion generally makes for higher quality implementations.
+2. **Proposal(s) - outline the proposed solution(s)**. If providing multiple possible solutions, the author should try to pick one that they think will work and explain why they are recommending it.  More often than not, reviewers will disagree about what constitutes the most promising proposal. Sometimes an alternative or hybrid proposal will arise during discussion that works better. Sometimes none of the proposals gain consensus. It can be difficult to go back to the drawing board after a design is rejected, but it's always worth it. The opportunity for early feedback and discussion generally makes for higher quality implementations.
 
-3. Example(s) - work out some of the key details and give an example or two to help people understand what the proposals are describing. These details often change after the document has been written and reviewed, but that's ok. The examples should be sketches, not full implementations.
+3. **Example(s) - work out some of the key details**. Give an example or two to help people understand what the proposals are describing. These details often change after the document has been written and reviewed, but that's ok. The examples should be sketches, not full implementations.
 
-4. Next steps - plan out action items. Who should be involved? How much time or effort will be required?
+4. **Next steps - plan out action items**. Who should be involved? How much time or effort will be required?
 
 Sometimes these components become the distinct sections in the document, but it's never a problem if they're a bit more integrated as long as they're all there in some form.
 

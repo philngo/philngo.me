@@ -2,10 +2,10 @@
   {
     "id": 1,
     "title": "The Design Doc - an Asynchronous Alternative to the Whiteboard",
-    "slug": "design-doc-async-alternative-whiteboard",
+    "slug": "design-doc-async-alternative",
     "source": "/api/articles/design-docs.md",
-    "published": "2018-12-24T00:00:00Z",
-    "updated": "2018-12-28T21:43:00Z",
-    "synopsis": "Well-structured design docs are a powerful way to plan."
+    "published": "2018-12-24T12:10:03Z",
+    "updated": "2018-12-29T21:43:06Z",
+    "synopsis": "Over the past couple of years I've found that using a specific structure when writing design docs is one of the most effective ways of planning software architectures and implementations."
   }
 ]
