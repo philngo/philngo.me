@@ -14,7 +14,7 @@
       </h1>
       <div class="content" v-html="articleHtml"></div>
     </template>
-    <template>
+    <template v-else>
       <div>
         Loading...
       </div>
