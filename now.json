@@ -8,6 +8,17 @@
     { "src": "articles/*.md", "use": "@now/static" }
   ],
   "routes": [
-    { "src": "/((?!\\.js|\\.css|\\.html|\\.ico|\\.map|\\.md|api).)*$", "dest": "index.html" }
+    {
+      "src": "/((?!\\.js|\\.css|\\.html|\\.ico|\\.map|\\.md|api).)*$",
+      "dest": "index.html"
+    },
+    {
+      "src": "api/articles/index.js",
+      "headers": {
+        "content-type": "application/json",
+        "access-control-allow-origin": "*"
+      },
+      "status": 200
+    }
   ]
 }
