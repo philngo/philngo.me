@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <div id="nav">
-      <h1 id="name">
-        <router-link class="black" to="/">Phil Ngo</router-link>
-      </h1>
-      <div class="catchphrase">
-       &gt;&gt;&gt; import this
+      <div id="nav-header">
+        <h1 id="name">
+          <router-link class="black" to="/">Phil Ngo</router-link>
+        </h1>
+        <div id="catchphrase">
+         &gt;&gt;&gt; import this
+        </div>
       </div>
-      <ul id="menu">
-        <li><router-link class="black" to="/writing">writing</router-link></li>
-        <li><router-link class="black" to="/personal">personal</router-link></li>
-        <li><router-link class="black" to="/professional">professional</router-link></li>
-      </ul>
+      <div id="nav-body">
+        <ul id="menu">
+          <li><router-link class="black" to="/writing">writing</router-link></li>
+          <li><router-link class="black" to="/personal">personal</router-link></li>
+          <li><router-link class="black" to="/professional">professional</router-link></li>
+        </ul>
+      </div>
     </div>
     <div id="content">
       <router-view/>
@@ -36,37 +40,15 @@ export default {
     "nav content";
   height: 100vh;
 }
-@media screen and (max-width: 900px) {
-  #app {
-    grid-template-columns: auto;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      "nav"
-      "content";
-    height: auto;
-  }
-}
 
 #nav {
   padding: 48px 30px;
   grid-area: nav;
   background-color: #f5f8f9;
 }
-@media screen and (max-width: 900px) {
-  #nav {
-    padding: 40px 40px;
-  }
-}
 
-#content {
-  grid-area: content;
-  overflow-y: auto;
-  padding: 80px 150px;
-}
-@media screen and (max-width: 900px) {
-  #content {
-    padding: 40px;
-  }
+#nav-body {
+  padding-top: 20px;
 }
 
 #name {
@@ -74,13 +56,8 @@ export default {
   font-size: 2.7rem;
   font-weight: 300;
 }
-@media screen and (max-width: 900px) {
-  #name {
-    font-size: 2.0rem;
-  }
-}
 
-.catchphrase {
+#catchphrase {
   color: #777;
   font-family: Consolas, monaco, monospace; font-size: 14px;
 }
@@ -90,9 +67,43 @@ export default {
   padding-left: 0;
   margin: 20px 0;
 }
+
+#content {
+  grid-area: content;
+  overflow-y: auto;
+  padding: 80px 12%;
+}
+
 @media screen and (max-width: 900px) {
+  #app {
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "nav"
+      "content";
+    height: auto;
+  }
+
+  #nav {
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #nav-body {
+    padding: 0 0 0 20px;
+  }
+
+  #name {
+    font-size: 2.0rem;
+  }
+
   #menu {
     margin: 0;
+  }
+
+  #content {
+    padding: 20px 6%;
   }
 }
 

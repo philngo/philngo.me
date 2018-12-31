@@ -3,15 +3,22 @@
     <div class="back">
       <router-link class="red" :to="{ name: 'writing' }">&lt;&lt; all articles</router-link>
     </div>
-    <div class="article-info">
-      <router-link :to="articleLink">{{ published.format('MMM D, YYYY') }}</router-link>
-      <i> by </i>
-      <router-link :to="authorLink" class="author">PHIL NGO</router-link>
-    </div>
-    <h1 class="title">
-      <router-link class="black" :to="articleLink">{{ title }}</router-link>
-    </h1>
-    <div class="content" v-html="articleHtml"></div>
+    <template v-if="articleHtml !== null">
+      <div class="article-info">
+        <router-link :to="articleLink">{{ published.format('MMM D, YYYY') }}</router-link>
+        <i> by </i>
+        <router-link :to="authorLink" class="author">PHIL NGO</router-link>
+      </div>
+      <h1 class="title">
+        <router-link class="black" :to="articleLink">{{ title }}</router-link>
+      </h1>
+      <div class="content" v-html="articleHtml"></div>
+    </template>
+    <template>
+      <div>
+        Loading...
+      </div>
+    </template>
   </div>
 </template>
 
@@ -32,7 +39,8 @@ export default {
   name: 'Article',
   data () {
     return {
-      markdown: null
+      markdown: null,
+      loadingTimerId: null
     }
   },
   computed: {
@@ -67,7 +75,7 @@ export default {
       return { name: 'article', params }
     },
     authorLink () {
-      return { name: 'personal' }
+      return { name: 'professional' }
     },
     articleHtml () {
       return this.markdown
@@ -76,11 +84,23 @@ export default {
     }
   },
   methods: {
+    redirect () {
+      this.$router.push({ name: 'writing' })
+    },
     loadArticleMarkdown () {
-      if (this.markdown === null && this.source !== undefined) {
-        callApiArticleMarkdown(this.source).then(markdown => {
-          this.markdown = markdown
-        })
+      if (this.markdown === null) {
+
+        if (this.loadingTimerId === null) {
+          this.loadingTimerId = setTimeout(this.redirect, 2000)
+        }
+
+        if (this.source !== undefined) {
+          callApiArticleMarkdown(this.source).then(markdown => {
+            this.markdown = markdown
+            clearTimeout(this.loadingTimerId)
+            this.loadingTimerId = null
+          })
+        }
       }
     }
   },
