@@ -14,7 +14,7 @@
     },
     {
       "src": "/api/article-index/",
-      "dest": "/api/articles/",
+      "dest": "/api/articles/index.js",
       "headers": {
         "content-type": "application/json",
         "access-control-allow-origin": "*"
