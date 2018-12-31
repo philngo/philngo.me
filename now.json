@@ -13,7 +13,7 @@
       "dest": "index.html"
     },
     {
-      "src": "/api/articles/",
+      "src": "/api/article-index/",
       "dest": "api/articles/index.js",
       "headers": {
         "content-type": "application/json",
