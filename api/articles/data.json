@@ -1,14 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "The Design Doc - an Asynchronous Alternative to the Whiteboard",
-    "slug": "design-doc-async-alternative",
-    "source": "/articles/design-docs.md",
-    "published": "2018-12-24T12:10:03Z",
-    "updated": "2018-12-29T21:43:06Z",
-    "synopsis": "Over the past couple of years I've found that using a specific structure when writing design docs is one of the most effective ways of planning software architectures and implementations."
-  },
-  {
     "id": 2,
     "title": "Cooking by Month - an Efficient Way to Expand your Culinary Horizons",
     "slug": "cooking-by-month",
@@ -16,5 +7,14 @@
     "published": "2018-12-30T23:48:08Z",
     "updated": "2018-12-30T23:48:08Z",
     "synopsis": "Recently, I have been trying to bridge the gap between delicious foods I can eat and delicious foods I can make."
+  },
+  {
+    "id": 1,
+    "title": "The Design Doc - an Asynchronous Alternative to the Whiteboard",
+    "slug": "design-doc-async-alternative",
+    "source": "/articles/design-docs.md",
+    "published": "2018-12-24T12:10:03Z",
+    "updated": "2018-12-29T21:43:06Z",
+    "synopsis": "Over the past couple of years I've found that using a specific structure when writing design docs is one of the most effective ways of planning software architectures and implementations."
   }
 ]
