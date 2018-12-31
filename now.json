@@ -4,8 +4,8 @@
   "alias": ["philngo.me", "www.philngo.me"],
   "builds": [
     { "src": "package.json", "use": "@now/static-build" },
-    { "src": "api/articles/index.js", "use": "@now/node" },
-    { "src": "articles/*.md", "use": "@now/static" }
+    { "src": "articles/*.md", "use": "@now/static" },
+    { "src": "api/articles/data.json", "use": "@now/static" }
   ],
   "routes": [
     {
@@ -13,8 +13,8 @@
       "dest": "index.html"
     },
     {
-      "src": "/api/article-index/",
-      "dest": "/api/articles/index.js",
+      "src": "/api/articles/",
+      "dest": "/api/articles/data.json",
       "headers": {
         "content-type": "application/json",
         "access-control-allow-origin": "*"

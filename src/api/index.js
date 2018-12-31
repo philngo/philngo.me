@@ -1,7 +1,7 @@
 const serverApi = process.env.VUE_APP_API_SERVER || ''
 
 export function callApiArticles () {
-  return fetch(`${serverApi}/api/article-index/`).then(response => {
+  return fetch(`${serverApi}/api/articles/`).then(response => {
     return response.json()
   })
 }
