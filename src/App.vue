@@ -4,6 +4,9 @@
       <h1 id="name">
         <router-link class="black" to="/">Phil Ngo</router-link>
       </h1>
+      <div class="catchphrase">
+       &gt;&gt;&gt; import this
+      </div>
       <ul id="menu">
         <li><router-link class="black" to="/writing">writing</router-link></li>
         <li><router-link class="black" to="/personal">personal</router-link></li>
@@ -66,9 +69,8 @@ export default {
   }
 }
 
-
 #name {
-  margin-top: 0;
+  margin: 0;
   font-size: 2.7rem;
   font-weight: 300;
 }
@@ -76,6 +78,11 @@ export default {
   #name {
     font-size: 2.0rem;
   }
+}
+
+.catchphrase {
+  color: #777;
+  font-family: Consolas, monaco, monospace; font-size: 14px;
 }
 
 #menu {

@@ -4,10 +4,7 @@
       <template v-for="article in articleList">
         <article-preview
           :key="article.id"
-          :title="article.title"
-          :slug="article.slug"
-          :published="article.published"
-          :synopsis="article.synopsis"
+          :id="article.id"
         />
       </template>
     </div>
@@ -21,7 +18,7 @@ import {
 
 import ArticlePreview from '@/components/ArticlePreview'
 export default {
-  name: 'writing',
+  name: 'Writing',
   components: {
     ArticlePreview
   },

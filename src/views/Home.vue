@@ -1,12 +1,33 @@
 <template>
   <div class="home">
-    This site is bit of a work in progress, but come on in!
+    <h2>Featured Article</h2>
+    <article-preview
+      :key="featuredArticle.id"
+      :id="featuredArticle.id"
+    />
   </div>
 </template>
 
 <script>
+import {
+  mapState
+} from 'vuex'
+
+import ArticlePreview from '@/components/ArticlePreview'
+
 export default {
-  name: 'home'
+  name: 'Home',
+  components: {
+    ArticlePreview
+  },
+  computed: {
+    ...mapState({
+      featuredArticle (state) {
+        const articleId = 2
+        return state.articles[articleId] || {}
+      }
+    })
+  }
 }
 </script>
 
