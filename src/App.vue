@@ -6,7 +6,9 @@
           <router-link class="black" to="/">Phil Ngo</router-link>
         </h1>
         <div id="catchphrase">
-         &gt;&gt;&gt; import this
+          <router-link :to="{ name: 'import-this'}">
+            &gt;&gt;&gt; import this
+          </router-link>
         </div>
       </div>
       <div id="nav-body">
@@ -57,9 +59,9 @@ export default {
   font-weight: 300;
 }
 
-#catchphrase {
+#catchphrase > a {
   color: #777;
-  font-family: Consolas, monaco, monospace; font-size: 14px;
+  font-family: Consolas, monaco, monospace;
 }
 
 #menu {
@@ -123,4 +125,7 @@ a.black:hover {  /* always black */
   color: black;
 }
 
+h1, h2, h3 {
+  font-weight: 300;
+}
 </style>

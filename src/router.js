@@ -34,6 +34,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "articles" */ './views/Article.vue')
     },
     {
+      path: '/import-this',
+      name: 'import-this',
+      component: () => import(/* webpackChunkName: "import-this" */ './views/ImportThis.vue')
+    },
+    {
       path: '*',
       name: 'error-404',
       component: () => import('./views/Error404.vue')
