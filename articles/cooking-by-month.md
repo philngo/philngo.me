@@ -12,7 +12,7 @@ That pattern is the single best thing about sticking with one cuisine over the c
 
 Over the course of the month we made king pao chicken, braised eggplant, wontons in numb and spicy Sichuan-style oil, stir fried cucumber with ground pork, fried rice with basil and green beans, stir fried broccoli, and a few other dishes. Most of the recipes we used came from [Serious Eats](https://www.seriouseats.com/tags/wok%20skill), which I like because it not because of the great recipes, but because it gives explanations and teaches principles.
 
-After a month off, our next category was Indian. We bought a spice grinder, a ton of interesting new spices, and learned that coriander is the same as cilantro (I guess I knew that?). We made palak paneer three times (still haven't gotten it quite right - thus the repetition), baingan bartha, a couple of tasty daals, butter chicken, chicken tikka masala, cauliflower curry, egg curry, and channa masala. We might do another Indian month.
+After a month off, our next category was Indian. We bought a spice grinder, a ton of interesting new spices, and learned that coriander is the same as cilantro (I guess I knew that?). We made palak paneer three times (still haven't gotten it quite right - thus the repetition), baingan bharta, a couple of tasty daals, butter chicken, chicken tikka masala, cauliflower curry, egg curry, and chana masala. We might do another Indian month.
 
 When we did an Italian month, almost all the ingredients were familiar, but we started to learn about how the quality of the dish is limited by the quality of the ingredients that comprise it. We made some delicious pastas and learned that the only canned tomatoes you ever need to buy are whole peeled tomatoes and tomato paste.
 
