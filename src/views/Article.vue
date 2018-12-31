@@ -1,5 +1,8 @@
 <template>
   <div class="article">
+    <div class="back">
+      <router-link class="red" :to="{ name: 'writing' }">&lt;&lt; all articles</router-link>
+    </div>
     <div class="article-info">
       <router-link :to="articleLink">{{ published.format('MMM D, YYYY') }}</router-link>
       <i> by </i>
@@ -93,6 +96,10 @@ export default {
 </script>
 
 <style scoped>
+.back {
+  padding-bottom: 10px;
+}
+
 .article {
   padding-bottom: 70px;
 }

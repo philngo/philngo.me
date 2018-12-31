@@ -5,34 +5,31 @@
       <i> by </i>
       <router-link :to="authorLink" class="author">PHIL NGO</router-link>
     </div>
-    <h2><router-link :to="articleLink">{{ title }}</router-link></h2>
+    <h1><router-link :to="articleLink">{{ title }}</router-link></h1>
     <p>{{ synopsis }}</p>
     <router-link class="red" :to="articleLink">Read more</router-link>
   </div>
 </template>
 
 <script>
+import {
+  mapState
+} from 'vuex'
+
 export default {
   name: 'ArticlePreview',
   props: {
-    title: {
-      type: String,
-      required: true
-    },
-    slug: {
-      type: String,
-      required: true
-    },
-    published: {
-      type: Object,
-      required: true
-    },
-    synopsis: {
-      type: String,
+    id: {
+      type: Number,
       required: true
     }
   },
   computed: {
+    ...mapState({
+      article (state) {
+        return state.articles[this.id] || {}
+      }
+    }),
     articleLink () {
       const params = {
         year: this.published.year(),
@@ -44,6 +41,18 @@ export default {
     },
     authorLink () {
       return { name: 'personal' }
+    },
+    slug () {
+      return this.article.slug
+    },
+    title () {
+      return this.article.title
+    },
+    published () {
+      return this.article.published
+    },
+    synopsis () {
+      return this.article.synopsis
     }
   }
 }
@@ -64,8 +73,9 @@ p {
   margin: 10px 0;
 }
 
-h2 {
-  margin: 0;
-  font-weight: 600;
+h1 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 100;
 }
 </style>
