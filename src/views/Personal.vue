@@ -17,8 +17,4 @@ export default {
 <style scoped>
 .personal {
 }
-
-h2 {
-  font-weight: 300;
-}
 </style>

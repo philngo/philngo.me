@@ -29,8 +29,4 @@ export default {
 <style scoped>
 .professional {
 }
-
-h2 {
-  font-weight: 300;
-}
 </style>
