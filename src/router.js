@@ -32,6 +32,11 @@ export default new Router({
       path: '/:year/:month/:day/:slug',
       name: 'article',
       component: () => import(/* webpackChunkName: "articles" */ './views/Article.vue')
+    },
+    {
+      path: '*',
+      name: 'error-404',
+      component: () => import('./views/Error404.vue')
     }
   ]
 })

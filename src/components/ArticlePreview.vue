@@ -40,7 +40,7 @@ export default {
       return { name: 'article', params }
     },
     authorLink () {
-      return { name: 'personal' }
+      return { name: 'professional' }
     },
     slug () {
       return this.article.slug
