@@ -9,7 +9,7 @@
   ],
   "routes": [
     {
-      "src": "/((?!\\.js|\\.css|\\.html|\\.ico|\\.map|\\.md|api).)*$",
+      "src": "/((?!\\.js|\\.css|\\.html|\\.ico|\\.map|\\.md|\\.png|api).)*$",
       "dest": "index.html"
     }
   ]
