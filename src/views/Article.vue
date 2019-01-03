@@ -149,4 +149,30 @@ h1.title {
   font-weight: 300;
 }
 
+.content >>> a {
+  color: #aa0505;
+}
+
+.content >>> blockquote {
+  margin: 0;
+  border-left: .25rem solid #dcdedf;
+  padding: 10px 20px 10px 40px;
+  background-color: #f7f8f9;
+}
+
+.content >>> pre {
+  background-color: #e7e8e9;
+  padding: 30px;
+  border-radius: 2px;
+  overflow-x: auto;
+}
+
+.content >>> code {
+  font-family: Consolas, monaco, monospace;
+  font-size: 14px;
+  background-color: #e7e8e9;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
 </style>

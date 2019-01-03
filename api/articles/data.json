@@ -2,7 +2,7 @@
   {
     "id": 3,
     "title": "Reading code for fun and profit",
-    "slug": "reading-code",
+    "slug": "reading-code-for-fun-and-profit",
     "source": "/articles/reading-code.md",
     "published": "2019-01-02T20:35:04Z",
     "updated": "2019-01-02T20:35:04Z",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "Cooking by Month - an Efficient Way to Expand your Culinary Horizons",
-    "slug": "cooking-by-month",
+    "slug": "cooking-by-month-an-efficient-way-to-expand-your-culinary-horizons",
     "source": "/articles/cooking-by-month.md",
     "published": "2018-12-30T23:48:08Z",
     "updated": "2018-12-30T23:48:08Z",
@@ -20,7 +20,7 @@
   {
     "id": 1,
     "title": "The Design Doc - an Asynchronous Alternative to the Whiteboard",
-    "slug": "design-doc-async-alternative",
+    "slug": "design-doc-an-asynchronous-alternative-to-the-whiteboard",
     "source": "/articles/design-docs.md",
     "published": "2018-12-24T12:10:03Z",
     "updated": "2018-12-29T21:43:06Z",

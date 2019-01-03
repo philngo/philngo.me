@@ -70,26 +70,26 @@ Let me illustrate with an example. I make heavy use of the [Django REST Framewor
 The library documentation for "[Concrete View Classes](https://www.django-rest-framework.org/api-guide/generic-views/#concrete-view-classes)" describe very clearly the methods provided by those classes and the classes from which they inherit. This documentation is helpful and describes exactly how to use these classes.
 
 >  The following classes are the concrete generic views. If you're using generic views this is normally the level you'll be working at unless you need heavily customized behavior.
-> 
+>
 > The view classes can be imported from rest_framework.generics.
 >
 > CreateAPIView
 > -------------
-> Used for create-only endpoints.
-> Provides a post method handler.
-> Extends: GenericAPIView, CreateModelMixin
+> - Used for create-only endpoints.
+> - Provides a post method handler.
+> - Extends: GenericAPIView, CreateModelMixin
 >
 > ListAPIView
 > -----------
-> Used for read-only endpoints to represent a collection of model instances.
-> Provides a get method handler.
-> Extends: GenericAPIView, ListModelMixin
+> - Used for read-only endpoints to represent a collection of model instances.
+> - Provides a get method handler.
+> - Extends: GenericAPIView, ListModelMixin
 
 These concrete view classes are available in specific, commonly used configurations. Looking at the code for these view classes shows [exactly the same picture](https://github.com/encode/django-rest-framework/blob/030119c117b0ee49f20ea607840967aee055ca76/rest_framework/generics.py#L183-L293), but makes it also clear that these classes are tiny and very simple mappings from HTTP methods to model-related actions, which makes it more obvious, in my opinion, how to use and extend these classes, and how to learn more about what they do.
 
     # Concrete view classes that provide method handlers
     # by composing the mixin classes with the base view.
-    
+
     class CreateAPIView(mixins.CreateModelMixin,
                         GenericAPIView):
         """
@@ -97,8 +97,8 @@ These concrete view classes are available in specific, commonly used configurati
         """
         def post(self, request, *args, **kwargs):
             return self.create(request, *args, **kwargs)
-    
-    
+
+
     class ListAPIView(mixins.ListModelMixin,
                       GenericAPIView):
         """
@@ -127,7 +127,7 @@ Poking through libraries (I wish I could remember which ones) when I was just st
 3. That the convention for internal functions is to put an underscore before the function name
 4. That the package `six` was used a lot for python 2/3 compatibility
 5. That sphinx is a really popular way of building documentation
-6. That it's pretty common to do a bunch of `from module import *` in __init__.py files specifically
+6. That it's pretty common to do a bunch of `from module import *` in `__init__.py` files specifically
 7. That decorators exist and metaclasses exist
 
 Reading code to learn from it is like doing a puzzle. Or like doing an orienteering course. Or like reading a history book. Or like going down a rabbit hole. Or like deep sea fishing. You may also be trawling for unfamiliar concepts, or for useful tools, or for more effective processes. All of these fish may be found in the vast ocean of open source repositories waiting to be explored.
