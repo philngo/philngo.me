@@ -122,6 +122,7 @@ export default {
 
 .article {
   padding-bottom: 70px;
+  max-width: 500px;
 }
 
 .article-info {

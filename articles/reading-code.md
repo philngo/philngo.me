@@ -4,7 +4,7 @@ Reading code is not like reading a book.  Sometimes I see people try to start at
 
 Many of these techniques have less to do with the code itself (i.e., the language, the elegance of the code), and more to do with processes that allow you to discover broad structures. This intriguing but probably over-quoted [statement from Linus Torvalds](https://lwn.net/Articles/193245/) comes to mind:
 
-I will, in fact, claim that the difference between a bad programmer and a good one is whether he considers his code or his data structures more important. Bad programmers worry about the code. Good programmers worry about data structures and their relationships.
+> I will, in fact, claim that the difference between a bad programmer and a good one is whether he considers his code or his data structures more important. Bad programmers worry about the code. Good programmers worry about data structures and their relationships.
 
 Actually yes, you should worry about the code. The code matters, and the code often defines the data structures. But he's got a point. What's the point in sweating the small stuff if big stuff is off? Put another way: elegant code can help make it easier to understand or build on top of good data structures, but it can't make up for bad data structures. A novelist can have the best grammar in the world, but if they write a book with a terrible plot, no one will enjoy it.
 
