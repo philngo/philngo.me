@@ -19,6 +19,19 @@
         Loading...
       </div>
     </template>
+    <div class="about">
+      <img class="headshot" src="../assets/headshot.png">
+      <div class="detail">
+        <p>
+          Personal blog by <a href="/">Phil Ngo</a>.
+        </p>
+        <p>
+          I write about coding, hobbies, or whatever happens to be on my mind.
+          Find me on <a href="https://github.com/philngo" target="_blank">GitHub</a>
+          or <a href="https://www.linkedin.com/in/phil-ngo-9b2b3b65/" target="_blank">LinkedIn</a>.
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -134,7 +147,7 @@ export default {
 }
 
 h1.title {
-  margin: 10px 0 60px;
+  margin: 10px 0 50px;
   font-size: 52px;
   font-weight: 100;
 }
@@ -145,6 +158,9 @@ h1.title {
   }
 }
 
+.content >>> p {
+  line-height: 24px;
+}
 .content >>> h1, h2, h3 {
   margin: 0;
   font-weight: 300;
@@ -176,4 +192,22 @@ h1.title {
   border-radius: 2px;
 }
 
+.about {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.headshot {
+  height: 120px;
+  border-radius: 7px;
+  margin-right: 30px;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+.detail >>> p {
+  margin: 10px;
+}
 </style>
