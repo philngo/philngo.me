@@ -38,11 +38,12 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 20px;
+  grid-gap: 40px 20px;
 }
 @media screen and (max-width: 900px) {
   .articles {
     grid-template-columns: 1fr;
+    grid-gap: 40px;
   }
 }
 </style>

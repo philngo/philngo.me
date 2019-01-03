@@ -10,12 +10,12 @@
       python package for obtaining dry bulb temperature data from various public sources.
     </p>
     <p>
-      Find me on <a href="https://github.com/philngo/" class="red" target="_blank">github</a> or on
+      Find me on <a href="https://github.com/philngo/" class="red" target="_blank">GitHub</a> or on
       <a href="https://www.linkedin.com/in/phil-ngo-9b2b3b65/" class="red" target="_blank">LinkedIn</a>.
     </p>
     <p>
       The code for this website is
-      <a href="https://github.com/philngo/philngo.me" class="red" target="_blank">on github</a>.
+      <a href="https://github.com/philngo/philngo.me" class="red" target="_blank">on GitHub</a>.
     </p>
   </div>
 </template>
