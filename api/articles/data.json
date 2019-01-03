@@ -1,5 +1,14 @@
 [
   {
+    "id": 3,
+    "title": "Reading code",
+    "slug": "reading-code",
+    "source": "/articles/reading-code.md",
+    "published": "2019-01-02T20:35:04Z",
+    "updated": "2019-01-02T20:35:04Z",
+    "synopsis": "Reading code to learn from it is like doing a puzzle. Or like doing an orienteering course. Or like reading a history book. Or like going down a rabbit hole."
+  },
+  {
     "id": 2,
     "title": "Cooking by Month - an Efficient Way to Expand your Culinary Horizons",
     "slug": "cooking-by-month",
