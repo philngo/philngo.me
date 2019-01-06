@@ -4,7 +4,7 @@
   "alias": ["philngo.me", "www.philngo.me"],
   "builds": [
     { "src": "package.json", "use": "@now/static-build" },
-    { "src": "articles/*.md", "use": "@now/static" },
+    { "src": "articles/(*.md|*.png)", "use": "@now/static" },
     { "src": "api/articles/data.json", "use": "@now/static" }
   ],
   "routes": [
