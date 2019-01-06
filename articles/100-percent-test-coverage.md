@@ -2,7 +2,7 @@ _Test coverage measures the lines or statements of source code your tests execut
 
 If you have never worked on a project with 100% test coverage, my guess is that you are in the majority. Not many projects have 100% test coverage. It is really difficult, and not always practical, to test _every single_ line of code.
 
-When it can be achieved though, it has some significant benefits. Aside from the obvious - well-tested code is generally less buggy and more maintainable than poorly tested code - there are some more subtle benefits as well. For instance, there is a very noticeable visual difference between 99% and 100% test coverage in coverage reports. That alone can be a strong motivator to maintain a high level of coverage, especially since coverage reports can point out exactly which lines aren't covered.
+When it can be achieved though, it has some significant benefits. Aside from the obvious - well-tested code is generally less buggy and more maintainable than poorly tested code - there are some more subtle benefits as well. For instance, the visual difference between 99% and 100% test coverage in coverage reports is pretty striking. That alone can be a strong motivator for maintaining a high level of coverage, especially since coverage reports can point out exactly which lines aren't covered.
 
 Let me illustrate what that looks like in practice. Here's what a coverage regression looks like:
 
