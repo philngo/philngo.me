@@ -14,3 +14,23 @@ body {
 *:after {
   box-sizing: inherit;
 }
+
+/* App-wide styles go here */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #aa0505;
+}
+a.red {  /* always red */
+  color: #aa0505;
+}
+a.black:hover {  /* always black */
+  color: black;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+}
