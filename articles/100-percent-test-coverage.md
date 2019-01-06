@@ -4,7 +4,7 @@ If you have never worked on a project with 100% test coverage, my guess is that 
 
 When it can be achieved though, it has some significant benefits. Aside from the obvious - well-tested code is generally less buggy and more maintainable than poorly tested code - there are some more subtle benefits as well. For instance, the visual difference between 99% and 100% test coverage in coverage reports is pretty striking. That alone can be a strong motivator for maintaining a high level of coverage, especially since coverage reports can point out exactly which lines aren't covered.
 
-Let me illustrate what that looks like in practice. Here's what a coverage regression looks like:
+Let me illustrate what that looks like in practice. Here's what a coverage regression looks like (you may have to scroll to the right to see it):
 
 ```
 ----------- coverage: platform linux, python 3.6.6-final-0 -----------
@@ -98,11 +98,11 @@ So what gives? Why don't more projects have 100% coverage?
 
 The problem is that true 100% test coverage is really hard to achieve in practice, especially if it hasn't been the standard since the start of the project. And even though it's usually possible with a lot of hard work, after some point you get diminishing returns. Consider: is writing more tests for code that is already pretty maintainable really better than working on anything else? Not always. So most projects encourage writing tests, but don't bother mandating 100% coverage. I don't blame them.
 
-But there is a strategy for getting to 100% coverage which I think often gets overlooked. And it is a lot easier that writing real tests. The strategy is to add markers in your code that indicate to your coverage counter to _ignore all untested blocks of code_.
+But there is a strategy for getting to 100% coverage which I think often gets overlooked. And it is a lot easier that writing real tests. The strategy is to add markers in your code that indicate to your coverage counter to **_ignore all untested blocks of code_**.
 
-This may sound pretty extreme. In projects with pretty low test coverage, this can feel like cheating - especially if the project maintainers consider test coverage to be primarily a _metric_. And for the purpose of the metric, it probably is cheating!
+This may sound pretty extreme. In projects with pretty low test coverage, this can feel like cheating - especially if the project maintainers consider test coverage to be primarily a **_metric_**. And for the purpose of the metric, it probably is cheating!
 
-But I think that attitude is generally misses a key insight: that test coverage is primarily a _tool_, and secondarily a metric. This subtle difference illuminates why an aggressive “ignoring” strategy helps test coverage really shine as a tool.
+But I think that attitude is generally misses a key insight: that test coverage is primarily a **_tool_**, and secondarily a metric. This subtle difference illuminates why an aggressive “ignoring” strategy helps test coverage really shine as a tool.
 
 Here's the system I've found works best:
 
@@ -112,9 +112,9 @@ Here's the system I've found works best:
 4. **Always restore 100% coverage when adding new code, preferably by adding new tests, but otherwise by adding an ignore marker.** This habit shouldn't be too tricky if starting from 100% coverage, because the exact lines which aren't covered should be reported and easily visible in the line by line coverage report.
 5. **Whenever you want to see or increase your "true" test coverage, temporarily configure the coverage counter to disable the ignores when counting coverage.** Often this can be done with a CLI flag. This mode should correspond with the coverage on the project before systematically adding ignore markers. Alternatively, if you're only interested in developing tests and increasing coverage for one relevant part of the code, you can just edit the coverage ignore statements for that section of the code base.
 6. **(Optional) If you want to keep the original metric, permanently configure high level metrics (e.g, badges) to disable the ignores.** This may help eliminate any lingering feeling that this is cheating. If you do this, local tests should still be configured to respect the ignore markers.
-7. Document in your contributing guide that this strategy is being used and inform contributors of the reasons behind it, and how to work with it.
+7. Document in your contributing guide that this strategy is being used and inform contributors of the reasons behind it and how to work with it.
 
-I call this the “fake it ‘til you make it” approach to 100% test coverage. It’s not true 100% test coverage, it's more like “100% coverage of the parts I intended to test”, which is a better standard to be shooting for anyway.
+I call this the “fake it ‘til you make it” approach to 100% test coverage. It’s not true 100% test coverage, it's more like “100% coverage of the parts I intended to test”, but I think that's a better standard to be shooting for anyway.
 
 I recently implemented this strategy on three of my most active repositories, and I have found it to be an unequivocal improvement. I and the other developers I work with find that:
 
