@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   display: grid;
@@ -68,6 +68,15 @@ export default {
   list-style: none;
   padding-left: 0;
   margin: 20px 0;
+}
+
+#menu >>> .black.router-link-active {
+  font-weight: 600;
+}
+
+#menu >>> .black:hover {
+  font-weight: 600;
+  transition: 200ms ease font-weight;
 }
 
 #content {
@@ -107,25 +116,5 @@ export default {
   #content {
     padding: 20px 6%;
   }
-}
-
-/* App-wide styles go here */
-
-a {
-  color: black;
-  text-decoration: none;
-}
-a:hover {
-  color: #aa0505;
-}
-a.red {  /* always red */
-  color: #aa0505;
-}
-a.black:hover {  /* always black */
-  color: black;
-}
-
-h1, h2, h3 {
-  font-weight: 300;
 }
 </style>

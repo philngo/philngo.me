@@ -1,5 +1,14 @@
 [
   {
+    "id": 4,
+    "title": "100% test coverage is a tool not a metric, so fake it 'til you make it",
+    "slug": "100-percent-test-coverage-is-a-tool-not-a-metric-so-fake-it-til-you-make-it",
+    "source": "/articles/100-percent-test-coverage.md",
+    "published": "2019-01-06T14:52:59Z",
+    "updated": "2019-01-06T14:52:59Z",
+    "synopsis": "Why don't more projects have 100% coverage? Because it's hard. But there is a strategy for getting to 100% coverage which I think often gets overlooked. And it is a lot easier than writing real tests."
+  },
+  {
     "id": 3,
     "title": "Reading code for fun and profit",
     "slug": "reading-code-for-fun-and-profit",
