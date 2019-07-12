@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "philngo-me",
-  "alias": ["philngo.me", "www.philngo.me"],
+  "name": "philngo-com",
+  "alias": ["philngo.com", "www.philngo.com"],
   "builds": [
     { "src": "package.json", "use": "@now/static-build" },
     { "src": "articles/*.md", "use": "@now/static" },
