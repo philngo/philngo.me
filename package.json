@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "marked": "^0.5.2",
-    "moment": "^2.23.0",
+    "moment": "^2.29.4",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
